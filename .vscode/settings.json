@@ -1,0 +1,57 @@
+{
+    "files.defaultLanguage": "cpp",
+    "editor.formatOnType": true,
+    "editor.snippetSuggestions": "top",
+   
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.preserveFocus": true,
+    "code-runner.clearPreviousOutput": true,
+
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.autocomplete": "Default",
+
+     "clang.cflags": [
+        "--target=x86_64-w64-mingw",
+        "-std=c11",
+        "-Wall"
+    ],
+    "clang.cxxflags": [
+        "--target=x86_64-w64-mingw",
+        "-std=c++17",
+        "-Wall"
+    ],
+    "clang.completion.completeMacros": false,
+    "clang.completion.enable": false,
+    "files.associations": {
+        "iostream": "cpp",
+        "deque": "cpp",
+        "algorithm": "cpp",
+        "numeric": "cpp",
+        "iosfwd": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "forward_list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp",
+        "xstring": "cpp",
+        "map": "cpp",
+        "utility": "cpp",
+        "istream": "cpp",
+        "system_error": "cpp",
+        "sstream": "cpp",
+        "string": "cpp",
+        "set": "cpp",
+        "strstream": "cpp"
+    }
+}
