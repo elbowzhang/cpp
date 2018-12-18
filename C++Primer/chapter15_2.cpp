@@ -41,3 +41,4 @@ double Bulk_Quote::net_price(size_t cnt) const
     else
         return cnt * price;
 }
+
