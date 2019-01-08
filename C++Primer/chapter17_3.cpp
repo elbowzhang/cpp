@@ -15,7 +15,30 @@ void findi()
         cout << results.str() << endl;
 }
 
+void findcc()
+{
+    regex r("[[:alnum:]]+\\.(cpp|cxx|cc)$", regex::icase);
+    smatch results;
+    string filename;
+    while(cin >> filename)
+        if(regex_search(filename, results, r))
+            cout << results.str() << endl;
+}
+
+void catcherror()
+{ 
+    try
+    {
+        regex r("[[:alnum:]+\\.(cpp|cxx|cc)$", regex::icase);
+    }
+    catch(const regex_error e)
+    {
+        cout << e.what() << "\ncode: " << e.code() << endl;
+    }
+    
+}
+
 int main()
 {
-    findi();
+    catcherror();
 }
